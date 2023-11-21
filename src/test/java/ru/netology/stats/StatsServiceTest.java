@@ -57,23 +57,6 @@ public class StatsServiceTest {
     }
 
     @Test
-    public void monthNumbersSalesMinimumAmount() { //номера всех месяцев с минимальными продажами
-        StatsService service = new StatsService();
-
-        // подготавливаем данные:
-        int[] sales = {
-                8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18
-        };
-        String expected = "9";
-
-        // вызываем целевой метод:
-        String actual = service.minSalesAll(sales);
-
-        // производим проверку (сравниваем ожидаемый и фактический):
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
     public void monthNumberSalesMaximumAmount() { //номер последнего месяца с максимальными продажами
         StatsService service = new StatsService();
 
@@ -85,23 +68,6 @@ public class StatsServiceTest {
 
         // вызываем целевой метод:
         int actual = service.maxSales(sales);
-
-        // производим проверку (сравниваем ожидаемый и фактический):
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    public void monthNumbersSalesMaximumAmount() { //номера месяцев с максимальными продажами
-        StatsService service = new StatsService();
-
-        // подготавливаем данные:
-        int[] sales = {
-                8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18
-        };
-        String expected = "6, 8";
-
-        // вызываем целевой метод:
-        String actual = service.maxSalesAll(sales);
 
         // производим проверку (сравниваем ожидаемый и фактический):
         Assertions.assertEquals(expected, actual);

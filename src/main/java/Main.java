@@ -15,11 +15,7 @@ public class Main {
 
         System.out.println("The month number with sales for the minimum amount is " + service.minSales(sales));
 
-        System.out.println("The month numbers with sales for the minimum amount is(are) " + service.minSalesAll(sales));
-
         System.out.println("The month number with sales for the maximum amount is " + service.maxSales(sales));
-
-        System.out.println("The month numbers with sales for the maximum amount is(are) " + service.maxSalesAll(sales));
 
         System.out.println("The number of the month(s) with low average sales " + service.salesLowAverage(sales));
 
